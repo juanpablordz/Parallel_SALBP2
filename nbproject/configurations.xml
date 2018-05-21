@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="89">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="f2" displayName="Duration" projectFiles="true">
+        <itemPath>DurationNode.cpp</itemPath>
+        <itemPath>DurationNode.h</itemPath>
+        <itemPath>DurationTree.cpp</itemPath>
+        <itemPath>DurationTree.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f3" displayName="Licuadora" projectFiles="true">
+        <itemPath>BinaryMixer.cpp</itemPath>
+        <itemPath>BinaryMixer.h</itemPath>
+        <itemPath>BinaryRestriction.cpp</itemPath>
+        <itemPath>BinaryRestriction.h</itemPath>
+        <itemPath>Mixer.cpp</itemPath>
+        <itemPath>Mixer.h</itemPath>
+        <itemPath>VectorBR.cpp</itemPath>
+        <itemPath>VectorBR.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f1" displayName="Restriccions" projectFiles="true">
+        <itemPath>Balas.cpp</itemPath>
+        <itemPath>Balas.h</itemPath>
+        <itemPath>Constant.cpp</itemPath>
+        <itemPath>Constant.h</itemPath>
+        <itemPath>CoordinatesVariable.cpp</itemPath>
+        <itemPath>CoordinatesVariable.h</itemPath>
+        <itemPath>Equation.cpp</itemPath>
+        <itemPath>Equation.h</itemPath>
+        <itemPath>GroupFamilies.cpp</itemPath>
+        <itemPath>GroupFamilies.h</itemPath>
+        <itemPath>InfoVariableAssignation.cpp</itemPath>
+        <itemPath>InfoVariableAssignation.h</itemPath>
+        <itemPath>Model.cpp</itemPath>
+        <itemPath>Model.h</itemPath>
+        <itemPath>NegRestriction.cpp</itemPath>
+        <itemPath>NegRestriction.h</itemPath>
+        <itemPath>PrecedenceRestriction.cpp</itemPath>
+        <itemPath>PrecedenceRestriction.h</itemPath>
+        <itemPath>RestrictionGenerator.cpp</itemPath>
+        <itemPath>RestrictionGenerator.h</itemPath>
+        <itemPath>Restrictions.cpp</itemPath>
+        <itemPath>Restrictions.h</itemPath>
+        <itemPath>Variable.cpp</itemPath>
+        <itemPath>Variable.h</itemPath>
+        <itemPath>VariableFamily.cpp</itemPath>
+        <itemPath>VariableFamily.h</itemPath>
+      </logicalFolder>
+      <itemPath>Activity.cpp</itemPath>
+      <itemPath>Activity.h</itemPath>
+      <itemPath>ActivityCandidateStations.cpp</itemPath>
+      <itemPath>ActivityCandidateStations.h</itemPath>
+      <itemPath>AllCandidateStations.cpp</itemPath>
+      <itemPath>AllCandidateStations.h</itemPath>
+      <itemPath>AssemblyLine.cpp</itemPath>
+      <itemPath>AssemblyLine.h</itemPath>
+      <itemPath>FileReader.cpp</itemPath>
+      <itemPath>FileReader.h</itemPath>
+      <itemPath>Graph.cpp</itemPath>
+      <itemPath>Graph.h</itemPath>
+      <itemPath>GraphCreator.cpp</itemPath>
+      <itemPath>GraphCreator.h</itemPath>
+      <itemPath>Heuristic.cpp</itemPath>
+      <itemPath>Heuristic.h</itemPath>
+      <itemPath>Integrator.cpp</itemPath>
+      <itemPath>Integrator.h</itemPath>
+      <itemPath>MAIN_imprimeTODO</itemPath>
+      <itemPath>Simplifier.cpp</itemPath>
+      <itemPath>Simplifier.h</itemPath>
+      <itemPath>Station.cpp</itemPath>
+      <itemPath>Station.h</itemPath>
+      <itemPath>TIPS</itemPath>
+      <itemPath>Utilities.cpp</itemPath>
+      <itemPath>Utilities.h</itemPath>
+      <itemPath>main.cpp</itemPath>
+      <itemPath>stdafx.cpp</itemPath>
+      <itemPath>stdafx.h</itemPath>
+      <itemPath>strtk.hpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <standard>8</standard>
+        </ccTool>
+      </compileType>
+      <item path="Activity.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Activity.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ActivityCandidateStations.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ActivityCandidateStations.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AllCandidateStations.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AllCandidateStations.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AssemblyLine.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AssemblyLine.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Balas.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Balas.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="BinaryMixer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BinaryMixer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="BinaryRestriction.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BinaryRestriction.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Constant.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Constant.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CoordinatesVariable.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CoordinatesVariable.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DurationNode.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DurationNode.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DurationTree.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DurationTree.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Equation.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Equation.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="FileReader.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="FileReader.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Graph.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Graph.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GraphCreator.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GraphCreator.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GroupFamilies.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GroupFamilies.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Heuristic.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Heuristic.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="InfoVariableAssignation.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="InfoVariableAssignation.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Integrator.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Integrator.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="MAIN_imprimeTODO" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Mixer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Mixer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Model.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Model.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="NegRestriction.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="NegRestriction.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PrecedenceRestriction.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="PrecedenceRestriction.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="RestrictionGenerator.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="RestrictionGenerator.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Restrictions.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Restrictions.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Simplifier.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Simplifier.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Station.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Station.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TIPS" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Utilities.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Utilities.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Variable.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Variable.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="VariableFamily.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="VariableFamily.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="VectorBR.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="VectorBR.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="stdafx.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="stdafx.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="strtk.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="Activity.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Activity.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ActivityCandidateStations.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ActivityCandidateStations.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AllCandidateStations.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AllCandidateStations.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AssemblyLine.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AssemblyLine.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Balas.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Balas.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="BinaryMixer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BinaryMixer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="BinaryRestriction.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="BinaryRestriction.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Constant.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Constant.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CoordinatesVariable.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CoordinatesVariable.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DurationNode.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DurationNode.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DurationTree.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DurationTree.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Equation.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Equation.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="FileReader.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="FileReader.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Graph.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Graph.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GraphCreator.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GraphCreator.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GroupFamilies.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="GroupFamilies.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Heuristic.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Heuristic.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="InfoVariableAssignation.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="InfoVariableAssignation.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Integrator.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Integrator.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="MAIN_imprimeTODO" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Mixer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Mixer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Model.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Model.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="NegRestriction.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="NegRestriction.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PrecedenceRestriction.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="PrecedenceRestriction.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="RestrictionGenerator.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="RestrictionGenerator.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Restrictions.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Restrictions.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Simplifier.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Simplifier.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Station.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Station.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TIPS" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Utilities.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Utilities.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Variable.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Variable.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="VariableFamily.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="VariableFamily.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="VectorBR.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="VectorBR.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="stdafx.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="stdafx.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="strtk.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

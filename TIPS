@@ -1,0 +1,33 @@
+Read a whole line from the user
+    getline(cin, x);
+
+iostream debe ser el primer include
+
+funciones de STRING
+    swap
+    insert
+    erase
+    find
+    rfind
+    replace
+    at()
+
+En la linea 15681 comente un linea que me permitio correr el programa pero creo que algo esta mal
+
+Tengo que verificar en que momento se decide de la duracion maxima de la estacion para determinar la psobibilidad de asignacion de actividades
+
+
+Restricciones de Precedencia
+Mi hipotesis es que solamente muestra las restricciones que son validas
+
+a)FORMATO
+
+    ACT#1 - ACT#2
+
+Es un vector de objeos de tipo "Precedencerestriction" que es atributo de un objeto "Restrictions"
+
+	vector<PrecedenceRestriction *> precRestrictions;
+
+
+En el metodo de SIMPLIFIER GET INTERVALS ES DONDE SE INTRODUCE EL TIEMPO mediante el constructor del dimplifier variable double heuristic es el timepo ideal de estacioon
+

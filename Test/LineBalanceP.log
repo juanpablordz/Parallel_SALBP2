@@ -1,0 +1,4 @@
+﻿  main.cpp
+main.cpp(39): error C2065: 'threadIdx': undeclared identifier
+main.cpp(39): error C2228: left of '.x' must have class/struct/union
+  main.cpp(39): note: type is 'unknown-type'

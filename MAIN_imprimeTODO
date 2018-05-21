@@ -1,0 +1,457 @@
+//     
+//    
+//   
+//    
+//    cout << "TEST" << endl;
+//    
+//    cout << "READING FILE..." << endl;
+// 
+//    //Verify file existence
+//    
+//            // /Users/juanpablo/Desktop/BOWMAN8.IN2
+//            // /Users/juanpablo/Desktop/LASCURAIN.IN2
+//    
+//    string filename = "/Users/normalazo/Desktop/Juan Pablo/LASCURAIN.IN2";
+//    bool exist = exist_test(filename);
+//    
+//    cout << "Existencia del archivo: " << exist << endl;
+//    
+//    int numberOfStations = 0;
+//    
+//    
+//    
+//    
+//    //Create Tables
+//    //1. ForwardTimes, BackwardTimes
+//    //2. Precedence Table
+//
+//    
+//    GraphCreator gc;
+//    Graph * graph = gc.createGraph(filename);
+//    graph->printGraph();
+//    
+//    graph->printActivityColletion();
+//    cout << graph->getTotalDuration() << endl;
+//    
+//    
+//    
+//    // Determine number of Stations for the desired BALANCING.
+//    // User input.
+//   
+//    int numberStations = 3;
+//    
+//    
+//    // Create Assembly Line Model
+//    // Solve Heuristic for this number of stations. 
+//    // CHANGE: I have to change this so the program start on the first
+//    // possible balancing and then iterate in increments of the minimum common denominator of the stations duration.
+//    
+//    
+//    AssemblyLine * al = new AssemblyLine(numberStations);
+//    Heuristic * op=new Heuristic(graph,al);
+//    op->solve();
+//    //double heuristic=op->getHeuristic();
+//    double heuristic;
+//    cout << "VALOR HEURISTICA: " << endl;
+//    cout << heuristic << endl;
+//    heuristic = graph->getTotalDuration()/numberStations;
+//    cout << heuristic << endl;
+//
+//    
+//    
+//    //APARTIR DE AQUI 
+//    
+//    int xxx = graph->getTotalDuration()/numberStations;
+//    bool finish = false;
+//    while(!finish){
+//        
+//    
+// 
+//        
+//        
+//    
+//    
+//    
+//    cout << "--------------------------------------------------------------------------------------------------" << endl;
+//    cout << "\n \n \n \n "<< endl;
+//    cout << "Tiempo de Balanceo: " << heuristic << endl;
+//    cout << "\n \n \n \n "<< endl;
+//    cout << "--------------------------------------------------------------------------------------------------" << endl;
+//    
+//    
+//    // Create Simplifier for model
+//    
+//    Simplifier s(graph,heuristic,numberStations);
+//    AllCandidateStations * cand= s.simplify();
+//    
+//    // Binary Search for a lower limit
+//    // Determine which is the objective of this segment of code that simplifies the model
+//    
+//   
+//		double lowerLimit, upperLimit, middleValue;
+//		lowerLimit= graph->getTotalDuration()/numberStations;
+//		lowerLimit= round(lowerLimit,true);
+//		upperLimit=heuristic;
+//
+//		double minValue,maxValue;
+//
+//		while(lowerLimit<=upperLimit)
+//		{
+//			middleValue = round((lowerLimit+upperLimit)/2,true);
+//			s.setHeuristic(middleValue);
+//			cand = s.simplify();
+//			
+//			if(cand->isFeasible())
+//			{
+//				upperLimit=middleValue-1;
+//			}
+//			else
+//			{
+//				lowerLimit=middleValue+1;
+//			}
+//
+//			delete cand;
+//		}
+//
+//		cand = s.simplify();
+//		// If it is feasible return this one
+//		if(cand->isFeasible())
+//		{
+//			lowerLimit=middleValue;
+//		}
+//		// If it is not, return next (+1)
+//		else
+//		{
+//			lowerLimit=middleValue+1;
+//		}
+//
+//		minValue=lowerLimit;
+//		maxValue=heuristic;
+//
+//		// Step 3: Finished getting lower bound
+//		
+//
+//		s.setHeuristic(heuristic);
+//		cand= s.simplify();
+//
+//		// Step 4: Finished simplifying model
+//		
+//    cout << "PRUEBA" << endl;
+//    
+//    graph->printGraph();
+//    
+//    graph->printActivityColletion();
+//    
+//    cout << "Candidates: " << endl;
+//    
+//    cand->print();
+//    
+//    RestrictionGenerator * r = new RestrictionGenerator(minValue,maxValue,cand,graph,al);
+//    
+//    Model * model= r->getModel();
+//    
+//    cout << "------RESTRICCIONES----- \n\n" << endl;
+//    
+//    model->print();
+//    
+//    cout << "\n ------TABLA UNIVERSO----- \n" << endl;
+//    int** tablaUniverso = cand->generateTable();
+//    
+//    // "precedenceR" es un arreglo de objetos (PrecedenceRestrictions) que vamos a usar para estraer las ecuaciones booleanas
+//    // de las restricciones que si son validas, es decir que generan una restriccion.
+//    vector<PrecedenceRestriction *> arrPrecedence = model->getPrecedenceRestrictions();
+//    
+//    // Generar restricciones de precedencia negadas
+//        /*
+//         * 1. Un metodo que extraiga de la restriccion la combiancion de letras que no se puede
+//         * 2. Determinar la negacion de esta expression
+//         * 3. Crear un arreglo de string
+//         * 4. Guardar las restricciones generadas en este arreglo de strings
+//         */
+//    
+//    /*
+//     * La idea va a ser recorrer la tabla del universo de variables en la columna de origen hacia abajo y para cada uno de los renglones
+//     * Verificar que no exista un valor possible anterior en estacion para el actual.
+//     * 
+//     
+//     */
+//    
+//     cout << "\n\n ------RESTRICCIONES PRECEDENCIA BOOLEANAS----- \n\n" << endl;
+//    
+//    //formato correcto
+//    vector<string> rPrecedence;
+//
+//    int origin, staOrigin;
+//    
+//    int dest, staDestination;
+//    int j = numberStations;
+//    bool flag = false;
+//    
+//    for(int i=0; i<arrPrecedence.size();i++){
+//        
+//        origin = arrPrecedence.at(i)->getOrigin();
+//        dest = arrPrecedence.at(i)->getDestination();
+//
+//        while(!flag && j>0){
+//            //[estacion][actividad]
+//            if(tablaUniverso[j][origin]==1){
+//                staOrigin=j;
+//                flag = true;
+//            }
+//            j--;
+//        }
+//        
+//        flag=false;
+//        j=0;
+//        
+//        while(!flag && j<numberStations){
+//            //[estacion][actividad]
+//            if(tablaUniverso[j][dest]==1){
+//                staDestination=j;
+//                flag = true;
+//            }
+//            j++;
+//        }
+//
+//        string temp; 
+//        string temp1 = getNegation(origin, staOrigin,tablaUniverso, numberStations);
+//        string temp2 = getNegation(dest, staDestination,tablaUniverso, numberStations);
+//        
+//        temp += temp1;
+//        temp += ",";
+//        temp += temp2;
+// 
+//       cout << temp << endl;
+//        
+//        // agregar a arreglo de restricciones de Precedencia
+//        rPrecedence.push_back(temp);
+//  
+//    }
+//    
+//    cout << "\n\n ------RESTRICTIONS UNICITY BOOLEANAS----- \n\n" << endl;
+//    
+//    
+//    
+//    
+//    vector<string> rUnicity = model->getUnicityRestrictions();
+//    
+//    string toString;
+//    int stationUnicity;
+//    for(int ii=0; ii< cand->getNumberActivities(); ii++){
+//        if(cand->getCandStationsForActivity(ii)->hasOnlyOneCandidate()){
+//                string UnicityConstr;
+//                toString = invHashAux(ii);
+//                UnicityConstr.append(toString);
+//                UnicityConstr.append(cand->getCandStationsForActivity(ii)->getCandidatesExtra());
+//                rUnicity.push_back(UnicityConstr);
+//            
+//        }
+//    }
+//    
+//    
+//    
+//
+//
+//    
+//    
+//    for(int i = 0; i< rUnicity.size() ;i++){
+//            cout << rUnicity.at(i) << endl;
+//    }
+//    
+//    //cand tiene el numero de actividades de ahi puedo generar la ultima restriccion
+//    // number of stations numberStations
+//    
+//
+//    
+//            
+//    
+//    
+//    cout << "\n\n ------RESTRICTIONS DURACION BOOLEANAS----- \n" << endl;
+//    
+//    int numRecDuration = model->getNumberEquations();
+//
+//    vector<Equation *> equations = model->getVectorEquations();
+//
+//    vector<vector<DurationNode>> groupDN;
+//    
+//    for(int w=0; w<numRecDuration ; w++){
+//        
+//        vector<DurationNode> arr;
+//        int y= 0;
+//        Variable * aux;
+//        int balanceDuration = heuristic - equations[w]->getConstantValue();
+//
+//        while(y<equations[w]->getNumVariables()){
+//            
+//            aux = equations[w]->getVariable(y);
+//            DurationNode * DN = new DurationNode( aux->getDuration(),aux->getActSta(), balanceDuration);  
+//            //Add Duration Node to Vector
+//            arr.push_back(*DN);
+//            y = y+1;
+//        }
+//        
+//        //Add Vector of Duration Nodes to array of restrictions.
+//        groupDN.push_back(arr);
+//    }
+//    
+//   
+//    // Verificar la creacion de los nodos de duracion.
+//    
+//    int size = groupDN.size();
+//    vector<DurationNode> arr;
+//    
+//    for(int i =0; i<size ; i++){       
+//        arr = groupDN[i];
+//        groupDN[i] = MergeSort(arr);
+//        int numDNs= groupDN[i].size();
+//        //cout << "\n \n";
+//        for(int j =0; j<numDNs ; j++){
+//            groupDN[i][j].setId(j);
+//            
+//            // Imprimir los nodos ordenados.
+//            /*
+//            cout << "Nodo " << j << endl;
+//            cout<< "Duracion: " << groupDN[i][j].getDuration() << endl;
+//            cout<< "Restriction: " << groupDN[i][j].getRestriction() << endl;
+//            cout<< "Id: " << groupDN[i][j].getId() <<endl;
+//            cout<< "BalanceDuration: " << groupDN[i][j].getBalanceDuration() <<endl;
+//            cout << "\n";
+//            */
+//        
+//        }
+//    }
+//    
+//    vector<string> vectorRest ;
+//    vector<string> * vectorR = &vectorRest;
+//    
+//    
+//    for(int j =0; j< groupDN.size(); j++){
+//        vector<DurationNode> * vectorDN = &groupDN[j];
+//        
+//        DurationTree * tree = new DurationTree(vectorDN, vectorR, groupDN[j][0].getBalanceDuration());
+//        tree->buildTree();
+//        
+//    }
+//    
+//    
+//    
+//    cout << "Restricciones Generadas:" << vectorR->size() << endl;
+//    
+//    for(int i = 0; i < vectorR->size() ; i++){
+//        cout << vectorR->at(i) << endl;
+//    }
+//    
+//    
+//    
+//    
+//
+//
+//    
+//    
+//        /*
+//    cout << "Prueba de negacion de una restriccion: " << endl;
+//    
+//    string negC = constraintNeg("a0", tablaUniverso, numberStations);
+//    
+//    cout << "Negacion: " << negC << endl;
+//    
+//    cout << cand->getCandStationsForActivity(9)->getCandidatesExtra() << endl;
+//    //cand->getCandStationsForActivity(0)->hasOnlyOneCandidate()
+//         * */
+//    
+//    
+//    cout << "Negacion de Restricciones Generadas:" << vectorR->size() << endl;
+//    
+//    for(int i = 0; i < vectorR->size() ; i++){
+//        string negC = constraintNeg(vectorR->at(i), tablaUniverso, numberStations);
+//        vectorR->at(i) = negC;
+//        cout << vectorR->at(i) << endl;
+//    }
+//    
+//    
+//    Mixer * mixer = new Mixer();
+//    
+//    
+//    
+//    
+//    string resultadoMixer = vectorR->at(0);
+//    string tempM;
+//    
+//    for(int i = 1; i < vectorR->size(); i++){
+//        cout << "Restriccion: " << vectorR->at(i) << endl;
+//        tempM = mixer->mix(resultadoMixer,vectorR->at(i));
+//        resultadoMixer = tempM;
+//        cout << "Iteracion: " << resultadoMixer << endl;
+//        
+//
+//    }
+//
+//
+//     
+//     
+//     
+//    for(int i = 0; i < rPrecedence.size() ; i++){
+//        cout << "Restriccion: " << rPrecedence.at(i) << endl;
+//        tempM = mixer->mix(resultadoMixer,rPrecedence.at(i));
+//        resultadoMixer = tempM;
+//        cout << "Iteracion: " << resultadoMixer << endl;
+//
+//    }
+//   
+//    
+//    
+//
+//    for(int i = 0; i < rUnicity.size() ; i++){
+//        cout << "Restriccion: " << rUnicity.at(i) << endl;
+//        tempM = mixer->mix(resultadoMixer,rUnicity.at(i));
+//        resultadoMixer = tempM;
+//        cout << "Iteracion: " << resultadoMixer << endl;
+//
+//    }
+//    
+//    cout << "Prueba Mixer"  << endl;
+//    
+//    cout << "Solucion: " << resultadoMixer << endl;
+//    
+//
+//    
+//    
+//    /*
+//
+//    cout << "Prueba Tokenizer"  << endl;
+//    
+//    vector<string> separado;
+//    
+//    Tokenize("g2",separado,":");
+//    
+//    for(int i = 0; i < separado.size() ; i++){
+//        cout << "Letra Actividad: " << actLetter(separado.at(i)) << endl;
+//        cout << "Numero estacion: " << numStation(separado.at(i)) << endl;
+//    }
+//     
+//     
+//     
+//     */
+//    
+//    cout << resultadoMixer.size() << endl;
+//    
+//    if(resultadoMixer.size()!=0){
+//        finish = true;
+//    }
+//    
+//    heuristic = heuristic + 5;
+// 
+//    
+//
+//    
+//    
+//    } // iteracion de tiempo de balanceo
+//
+//
+//    
+//    
+//    
+//    
+//    
+//    
+//    

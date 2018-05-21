@@ -1,0 +1,40 @@
+﻿  VectorBR.cpp
+  VariableFamily.cpp
+  Variable.cpp
+  Utilities.cpp
+  stdafx.cpp
+  Station.cpp
+  Simplifier.cpp
+  Restrictions.cpp
+  RestrictionGenerator.cpp
+  PrecedenceRestriction.cpp
+  NegRestriction.cpp
+  cpp_standard_headers_indexer.cpp
+  Model.cpp
+  Mixer.cpp
+  main.cpp
+  Integrator.cpp
+  InfoVariableAssignation.cpp
+  Heuristic.cpp
+  GroupFamilies.cpp
+  GraphCreator.cpp
+  Generating Code...
+  Compiling...
+  Graph.cpp
+  FileReader.cpp
+  Equation.cpp
+  DurationTree.cpp
+  DurationNode.cpp
+  CoordinatesVariable.cpp
+  Constant.cpp
+  BinaryRestriction.cpp
+  BinaryMixer.cpp
+  Balas.cpp
+  AssemblyLine.cpp
+  AllCandidateStations.cpp
+  ActivityCandidateStations.cpp
+  Activity.cpp
+  Generating Code...
+  c_standard_headers_indexer.c
+MSVCRTD.lib(exe_winmain.obj) : error LNK2019: unresolved external symbol WinMain referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+C:\Users\FERNYBOY\Documents\Temporal_JP\LineBalancingBooleanMethod-master\x64\Debug\LineBalanceP.exe : fatal error LNK1120: 1 unresolved externals

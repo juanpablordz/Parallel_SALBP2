@@ -1,0 +1,72 @@
+  cout << "--------------------------------------------------------------------------------------------------" << endl;
+	int numStations = 4;
+	
+	//declare hashtable
+	//int hashTable_size = 1073741824/4;
+	//bool* hashTable = new bool[hashTable_size];
+
+	unsigned int vec1[1024];
+	unsigned int vec2[512];
+	unsigned int sol[225000]; //225,000 -> 56,250 restricciones de 4 estaciones
+	for (int i = 0; i < 1000; i++) {
+		vec1[i] = 0;
+		vec2[i] = 0;
+		sol[i] = 0;
+	}
+
+	int vec1_size = 0;
+	unsigned int * ptr1 = vec1;
+	vec1_size = StrRestr2BinVector(4, "a0:b0:c0:d0,a0:b2:c1:d3,a1:b1:c2:d2, ptr1);
+	printf("\n\nTamano vector: %d \n\n", vec1_size);
+
+
+	int vec2_size = 0;
+	unsigned int * ptr2 = vec2;
+	vec2_size = StrRestr2BinVector(4, "a0:b0:c0:d0,z0", ptr2);
+	printf("\n\nTamano vector: %d \n\n", vec2_size);
+
+	printf("\n\n Vector 1\n\n");
+	//printArrayPointer(ptr1, vec1_size);
+	printf("\n\n Vector 2\n\n");
+	//printArrayPointer(ptr2, vec2_size);
+
+	printf("\n\n Vector Solucion antes de integracion \n\n");
+	unsigned int * ptr3 = sol;
+	//printArrayPointer(ptr3, (vec1_size * vec2_size)/4);
+
+	
+	runTest(argc, (const char **)argv,numStations, ptr1,vec1_size, ptr2,vec2_size, ptr3);
+	printf("\n\n Vector Solucion despues de integracion \n\n");
+	//printArrayPointer(ptr3, (vec1_size * vec2_size) / 4);
+	std::map<string, bool> mapTable;
+
+	int j = 0;
+	int solution_cont = 0;
+	unsigned int no_dup_sol[2000];
+	string hash_key;
+	while (j < 840) {
+		hash_key.append(std::to_string(*(sol+j)));
+		hash_key.append(std::to_string(*(sol+j+1)));
+		hash_key.append(std::to_string(*(sol+j+2)));
+		hash_key.append(std::to_string(*(sol+j+3)));
+		cout << "hash_key " << j / 4 << " : " << hash_key << endl;
+
+		if (!mapTable[hash_key]) {
+			mapTable[hash_key] = true;
+			no_dup_sol[solution_cont + 0] = sol[j + 0];
+			no_dup_sol[solution_cont + 1] = sol[j + 1];
+			no_dup_sol[solution_cont + 2] = sol[j + 2];
+			no_dup_sol[solution_cont + 3] = sol[j + 3];
+			solution_cont+=4;
+
+
+
+		}
+
+		j += 4;
+		hash_key = "";
+	}
+
+	cout << "No duplicates: " << solution_cont/4 << endl;
+
+

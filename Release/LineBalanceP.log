@@ -1,0 +1,269 @@
+﻿  Activity.cpp
+  ActivityCandidateStations.cpp
+  AllCandidateStations.cpp
+  AssemblyLine.cpp
+  Balas.cpp
+  BinaryMixer.cpp
+  BinaryRestriction.cpp
+  Constant.cpp
+  CoordinatesVariable.cpp
+  DurationNode.cpp
+  DurationTree.cpp
+  Equation.cpp
+  FileReader.cpp
+  Graph.cpp
+  GraphCreator.cpp
+  GroupFamilies.cpp
+  Heuristic.cpp
+  InfoVariableAssignation.cpp
+  Integrator.cpp
+  main.cpp
+  Generating Code...
+  Compiling...
+  Mixer.cpp
+  Model.cpp
+  cpp_standard_headers_indexer.cpp
+  NegRestriction.cpp
+  PrecedenceRestriction.cpp
+  RestrictionGenerator.cpp
+  Restrictions.cpp
+  Simplifier.cpp
+  Station.cpp
+  stdafx.cpp
+  Utilities.cpp
+  Variable.cpp
+  VariableFamily.cpp
+  VectorBR.cpp
+  Generating Code...
+  c_standard_headers_indexer.c
+LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/OPT:REF' specification
+Graph.obj : error LNK2001: unresolved external symbol __imp___acrt_iob_func
+PrecedenceRestriction.obj : error LNK2001: unresolved external symbol __imp___acrt_iob_func
+Station.obj : error LNK2001: unresolved external symbol __imp___acrt_iob_func
+Activity.obj : error LNK2001: unresolved external symbol __imp___acrt_iob_func
+ActivityCandidateStations.obj : error LNK2001: unresolved external symbol __imp___acrt_iob_func
+AllCandidateStations.obj : error LNK2001: unresolved external symbol __imp___acrt_iob_func
+AssemblyLine.obj : error LNK2001: unresolved external symbol __imp___acrt_iob_func
+Graph.obj : error LNK2001: unresolved external symbol __imp___stdio_common_vfprintf
+PrecedenceRestriction.obj : error LNK2001: unresolved external symbol __imp___stdio_common_vfprintf
+Station.obj : error LNK2001: unresolved external symbol __imp___stdio_common_vfprintf
+Activity.obj : error LNK2001: unresolved external symbol __imp___stdio_common_vfprintf
+ActivityCandidateStations.obj : error LNK2001: unresolved external symbol __imp___stdio_common_vfprintf
+AllCandidateStations.obj : error LNK2001: unresolved external symbol __imp___stdio_common_vfprintf
+AssemblyLine.obj : error LNK2001: unresolved external symbol __imp___stdio_common_vfprintf
+Utilities.obj : error LNK2001: unresolved external symbol __imp__invalid_parameter_noinfo_noreturn
+Variable.obj : error LNK2001: unresolved external symbol __imp__invalid_parameter_noinfo_noreturn
+VariableFamily.obj : error LNK2001: unresolved external symbol __imp__invalid_parameter_noinfo_noreturn
+VectorBR.obj : error LNK2001: unresolved external symbol __imp__invalid_parameter_noinfo_noreturn
+RestrictionGenerator.obj : error LNK2001: unresolved external symbol __imp__invalid_parameter_noinfo_noreturn
+Restrictions.obj : error LNK2001: unresolved external symbol __imp__invalid_parameter_noinfo_noreturn
+Simplifier.obj : error LNK2001: unresolved external symbol __imp__invalid_parameter_noinfo_noreturn
+Station.obj : error LNK2001: unresolved external symbol __imp__invalid_parameter_noinfo_noreturn
+Heuristic.obj : error LNK2001: unresolved external symbol __imp__invalid_parameter_noinfo_noreturn
+Mixer.obj : error LNK2001: unresolved external symbol __imp__invalid_parameter_noinfo_noreturn
+Model.obj : error LNK2001: unresolved external symbol __imp__invalid_parameter_noinfo_noreturn
+NegRestriction.obj : error LNK2001: unresolved external symbol __imp__invalid_parameter_noinfo_noreturn
+FileReader.obj : error LNK2001: unresolved external symbol __imp__invalid_parameter_noinfo_noreturn
+Graph.obj : error LNK2001: unresolved external symbol __imp__invalid_parameter_noinfo_noreturn
+GraphCreator.obj : error LNK2001: unresolved external symbol __imp__invalid_parameter_noinfo_noreturn
+GroupFamilies.obj : error LNK2001: unresolved external symbol __imp__invalid_parameter_noinfo_noreturn
+BinaryRestriction.obj : error LNK2001: unresolved external symbol __imp__invalid_parameter_noinfo_noreturn
+Constant.obj : error LNK2001: unresolved external symbol __imp__invalid_parameter_noinfo_noreturn
+DurationNode.obj : error LNK2001: unresolved external symbol __imp__invalid_parameter_noinfo_noreturn
+Equation.obj : error LNK2001: unresolved external symbol __imp__invalid_parameter_noinfo_noreturn
+ActivityCandidateStations.obj : error LNK2001: unresolved external symbol __imp__invalid_parameter_noinfo_noreturn
+AllCandidateStations.obj : error LNK2001: unresolved external symbol __imp__invalid_parameter_noinfo_noreturn
+AssemblyLine.obj : error LNK2001: unresolved external symbol __imp__invalid_parameter_noinfo_noreturn
+BinaryMixer.obj : error LNK2001: unresolved external symbol __imp__invalid_parameter_noinfo_noreturn
+Utilities.obj : error LNK2001: unresolved external symbol __imp_memmove
+Variable.obj : error LNK2001: unresolved external symbol __imp_memmove
+VariableFamily.obj : error LNK2001: unresolved external symbol __imp_memmove
+VectorBR.obj : error LNK2001: unresolved external symbol __imp_memmove
+RestrictionGenerator.obj : error LNK2001: unresolved external symbol __imp_memmove
+Restrictions.obj : error LNK2001: unresolved external symbol __imp_memmove
+Simplifier.obj : error LNK2001: unresolved external symbol __imp_memmove
+Station.obj : error LNK2001: unresolved external symbol __imp_memmove
+Heuristic.obj : error LNK2001: unresolved external symbol __imp_memmove
+Mixer.obj : error LNK2001: unresolved external symbol __imp_memmove
+Model.obj : error LNK2001: unresolved external symbol __imp_memmove
+NegRestriction.obj : error LNK2001: unresolved external symbol __imp_memmove
+FileReader.obj : error LNK2001: unresolved external symbol __imp_memmove
+Graph.obj : error LNK2001: unresolved external symbol __imp_memmove
+GraphCreator.obj : error LNK2001: unresolved external symbol __imp_memmove
+GroupFamilies.obj : error LNK2001: unresolved external symbol __imp_memmove
+BinaryRestriction.obj : error LNK2001: unresolved external symbol __imp_memmove
+Constant.obj : error LNK2001: unresolved external symbol __imp_memmove
+DurationNode.obj : error LNK2001: unresolved external symbol __imp_memmove
+Equation.obj : error LNK2001: unresolved external symbol __imp_memmove
+ActivityCandidateStations.obj : error LNK2001: unresolved external symbol __imp_memmove
+AllCandidateStations.obj : error LNK2001: unresolved external symbol __imp_memmove
+AssemblyLine.obj : error LNK2001: unresolved external symbol __imp_memmove
+BinaryMixer.obj : error LNK2001: unresolved external symbol __imp_memmove
+VectorBR.obj : error LNK2001: unresolved external symbol _CxxThrowException
+MSVCRT.lib(throw_bad_alloc.obj) : error LNK2001: unresolved external symbol _CxxThrowException
+Station.obj : error LNK2001: unresolved external symbol _CxxThrowException
+Utilities.obj : error LNK2001: unresolved external symbol _CxxThrowException
+Variable.obj : error LNK2001: unresolved external symbol _CxxThrowException
+VariableFamily.obj : error LNK2001: unresolved external symbol _CxxThrowException
+PrecedenceRestriction.obj : error LNK2001: unresolved external symbol _CxxThrowException
+RestrictionGenerator.obj : error LNK2001: unresolved external symbol _CxxThrowException
+Restrictions.obj : error LNK2001: unresolved external symbol _CxxThrowException
+Simplifier.obj : error LNK2001: unresolved external symbol _CxxThrowException
+Heuristic.obj : error LNK2001: unresolved external symbol _CxxThrowException
+Mixer.obj : error LNK2001: unresolved external symbol _CxxThrowException
+Model.obj : error LNK2001: unresolved external symbol _CxxThrowException
+NegRestriction.obj : error LNK2001: unresolved external symbol _CxxThrowException
+FileReader.obj : error LNK2001: unresolved external symbol _CxxThrowException
+Graph.obj : error LNK2001: unresolved external symbol _CxxThrowException
+GraphCreator.obj : error LNK2001: unresolved external symbol _CxxThrowException
+GroupFamilies.obj : error LNK2001: unresolved external symbol _CxxThrowException
+BinaryRestriction.obj : error LNK2001: unresolved external symbol _CxxThrowException
+Constant.obj : error LNK2001: unresolved external symbol _CxxThrowException
+DurationNode.obj : error LNK2001: unresolved external symbol _CxxThrowException
+Equation.obj : error LNK2001: unresolved external symbol _CxxThrowException
+ActivityCandidateStations.obj : error LNK2001: unresolved external symbol _CxxThrowException
+AllCandidateStations.obj : error LNK2001: unresolved external symbol _CxxThrowException
+AssemblyLine.obj : error LNK2001: unresolved external symbol _CxxThrowException
+BinaryMixer.obj : error LNK2001: unresolved external symbol _CxxThrowException
+MSVCRT.lib(gshandlereh.obj) : error LNK2001: unresolved external symbol __CxxFrameHandler3
+Variable.obj : error LNK2001: unresolved external symbol __CxxFrameHandler3
+VariableFamily.obj : error LNK2001: unresolved external symbol __CxxFrameHandler3
+VectorBR.obj : error LNK2001: unresolved external symbol __CxxFrameHandler3
+msvcprt.lib(locale0_implib.obj) : error LNK2001: unresolved external symbol __CxxFrameHandler3
+Restrictions.obj : error LNK2001: unresolved external symbol __CxxFrameHandler3
+Simplifier.obj : error LNK2001: unresolved external symbol __CxxFrameHandler3
+Station.obj : error LNK2001: unresolved external symbol __CxxFrameHandler3
+Utilities.obj : error LNK2001: unresolved external symbol __CxxFrameHandler3
+Mixer.obj : error LNK2001: unresolved external symbol __CxxFrameHandler3
+Model.obj : error LNK2001: unresolved external symbol __CxxFrameHandler3
+NegRestriction.obj : error LNK2001: unresolved external symbol __CxxFrameHandler3
+RestrictionGenerator.obj : error LNK2001: unresolved external symbol __CxxFrameHandler3
+GroupFamilies.obj : error LNK2001: unresolved external symbol __CxxFrameHandler3
+Heuristic.obj : error LNK2001: unresolved external symbol __CxxFrameHandler3
+InfoVariableAssignation.obj : error LNK2001: unresolved external symbol __CxxFrameHandler3
+main.obj : error LNK2001: unresolved external symbol __CxxFrameHandler3
+Equation.obj : error LNK2001: unresolved external symbol __CxxFrameHandler3
+FileReader.obj : error LNK2001: unresolved external symbol __CxxFrameHandler3
+Graph.obj : error LNK2001: unresolved external symbol __CxxFrameHandler3
+GraphCreator.obj : error LNK2001: unresolved external symbol __CxxFrameHandler3
+BinaryRestriction.obj : error LNK2001: unresolved external symbol __CxxFrameHandler3
+Constant.obj : error LNK2001: unresolved external symbol __CxxFrameHandler3
+DurationNode.obj : error LNK2001: unresolved external symbol __CxxFrameHandler3
+DurationTree.obj : error LNK2001: unresolved external symbol __CxxFrameHandler3
+ActivityCandidateStations.obj : error LNK2001: unresolved external symbol __CxxFrameHandler3
+AllCandidateStations.obj : error LNK2001: unresolved external symbol __CxxFrameHandler3
+AssemblyLine.obj : error LNK2001: unresolved external symbol __CxxFrameHandler3
+BinaryMixer.obj : error LNK2001: unresolved external symbol __CxxFrameHandler3
+Variable.obj : error LNK2001: unresolved external symbol memcpy
+VariableFamily.obj : error LNK2001: unresolved external symbol memcpy
+VectorBR.obj : error LNK2001: unresolved external symbol memcpy
+Model.obj : error LNK2001: unresolved external symbol memcpy
+NegRestriction.obj : error LNK2001: unresolved external symbol memcpy
+Restrictions.obj : error LNK2001: unresolved external symbol memcpy
+Utilities.obj : error LNK2001: unresolved external symbol memcpy
+FileReader.obj : error LNK2001: unresolved external symbol memcpy
+GraphCreator.obj : error LNK2001: unresolved external symbol memcpy
+GroupFamilies.obj : error LNK2001: unresolved external symbol memcpy
+Mixer.obj : error LNK2001: unresolved external symbol memcpy
+ActivityCandidateStations.obj : error LNK2001: unresolved external symbol memcpy
+BinaryMixer.obj : error LNK2001: unresolved external symbol memcpy
+BinaryRestriction.obj : error LNK2001: unresolved external symbol memcpy
+DurationNode.obj : error LNK2001: unresolved external symbol memcpy
+VariableFamily.obj : error LNK2019: unresolved external symbol __std_terminate referenced in function "public: void __cdecl std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >::_Copy(unsigned __int64,unsigned __int64)" (?_Copy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAX_K0@Z)
+msvcprt.lib(locale0_implib.obj) : error LNK2001: unresolved external symbol __std_terminate
+main.obj : error LNK2001: unresolved external symbol __std_terminate
+Model.obj : error LNK2001: unresolved external symbol __std_terminate
+Utilities.obj : error LNK2001: unresolved external symbol __std_terminate
+Variable.obj : error LNK2001: unresolved external symbol __std_terminate
+FileReader.obj : error LNK2001: unresolved external symbol __std_terminate
+Graph.obj : error LNK2001: unresolved external symbol __std_terminate
+GraphCreator.obj : error LNK2001: unresolved external symbol __std_terminate
+GroupFamilies.obj : error LNK2001: unresolved external symbol __std_terminate
+BinaryMixer.obj : error LNK2001: unresolved external symbol __std_terminate
+BinaryRestriction.obj : error LNK2001: unresolved external symbol __std_terminate
+DurationNode.obj : error LNK2001: unresolved external symbol __std_terminate
+Equation.obj : error LNK2001: unresolved external symbol __std_terminate
+BinaryMixer.obj : error LNK2019: unresolved external symbol memcmp referenced in function "bool __cdecl std::operator<<char,struct std::char_traits<char>,class std::allocator<char> >(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (??$?MDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@0@Z)
+FileReader.obj : error LNK2001: unresolved external symbol memcmp
+GraphCreator.obj : error LNK2001: unresolved external symbol memcmp
+Mixer.obj : error LNK2001: unresolved external symbol memcmp
+BinaryRestriction.obj : error LNK2019: unresolved external symbol __imp___std_exception_copy referenced in function "public: __cdecl std::bad_cast::bad_cast(class std::bad_cast const &)" (??0bad_cast@std@@QEAA@AEBV01@@Z)
+FileReader.obj : error LNK2001: unresolved external symbol __imp___std_exception_copy
+GraphCreator.obj : error LNK2001: unresolved external symbol __imp___std_exception_copy
+BinaryRestriction.obj : error LNK2019: unresolved external symbol __imp___std_exception_destroy referenced in function "public: virtual __cdecl std::bad_cast::~bad_cast(void)" (??1bad_cast@std@@UEAA@XZ)
+FileReader.obj : error LNK2001: unresolved external symbol __imp___std_exception_destroy
+GraphCreator.obj : error LNK2001: unresolved external symbol __imp___std_exception_destroy
+Heuristic.obj : error LNK2001: unresolved external symbol memset
+Utilities.obj : error LNK2001: unresolved external symbol memset
+MSVCRT.lib(utility_desktop.obj) : error LNK2001: unresolved external symbol memset
+BinaryRestriction.obj : error LNK2001: unresolved external symbol memset
+FileReader.obj : error LNK2001: unresolved external symbol memset
+Graph.obj : error LNK2001: unresolved external symbol memset
+GraphCreator.obj : error LNK2001: unresolved external symbol memset
+FileReader.obj : error LNK2019: unresolved external symbol __imp__invalid_parameter_noinfo referenced in function "protected: virtual int __cdecl std::basic_filebuf<char,struct std::char_traits<char> >::uflow(void)" (?uflow@?$basic_filebuf@DU?$char_traits@D@std@@@std@@MEAAHXZ)
+GraphCreator.obj : error LNK2001: unresolved external symbol __imp__invalid_parameter_noinfo
+FileReader.obj : error LNK2019: unresolved external symbol __imp__errno referenced in function "protected: virtual int __cdecl std::basic_filebuf<char,struct std::char_traits<char> >::uflow(void)" (?uflow@?$basic_filebuf@DU?$char_traits@D@std@@@std@@MEAAHXZ)
+GraphCreator.obj : error LNK2001: unresolved external symbol __imp__errno
+Utilities.obj : error LNK2001: unresolved external symbol __imp__errno
+FileReader.obj : error LNK2019: unresolved external symbol __imp_atoi referenced in function "public: void __cdecl FileReader::parseTwoValues(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,int *,int *)" (?parseTwoValues@FileReader@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAH1@Z)
+GraphCreator.obj : error LNK2001: unresolved external symbol __imp_atoi
+FileReader.obj : error LNK2019: unresolved external symbol __imp__get_stream_buffer_pointers referenced in function "public: class std::basic_filebuf<char,struct std::char_traits<char> > * __cdecl std::basic_filebuf<char,struct std::char_traits<char> >::open(char const *,int,int)" (?open@?$basic_filebuf@DU?$char_traits@D@std@@@std@@QEAAPEAV12@PEBDHH@Z)
+GraphCreator.obj : error LNK2001: unresolved external symbol __imp__get_stream_buffer_pointers
+FileReader.obj : error LNK2019: unresolved external symbol __imp_fclose referenced in function "public: class std::basic_filebuf<char,struct std::char_traits<char> > * __cdecl std::basic_filebuf<char,struct std::char_traits<char> >::close(void)" (?close@?$basic_filebuf@DU?$char_traits@D@std@@@std@@QEAAPEAV12@XZ)
+GraphCreator.obj : error LNK2001: unresolved external symbol __imp_fclose
+FileReader.obj : error LNK2019: unresolved external symbol __imp_fflush referenced in function "protected: virtual int __cdecl std::basic_filebuf<char,struct std::char_traits<char> >::sync(void)" (?sync@?$basic_filebuf@DU?$char_traits@D@std@@@std@@MEAAHXZ)
+GraphCreator.obj : error LNK2001: unresolved external symbol __imp_fflush
+FileReader.obj : error LNK2019: unresolved external symbol __imp_fgetc referenced in function "protected: virtual int __cdecl std::basic_filebuf<char,struct std::char_traits<char> >::uflow(void)" (?uflow@?$basic_filebuf@DU?$char_traits@D@std@@@std@@MEAAHXZ)
+GraphCreator.obj : error LNK2001: unresolved external symbol __imp_fgetc
+FileReader.obj : error LNK2019: unresolved external symbol __imp_fgetpos referenced in function "protected: virtual class std::fpos<struct _Mbstatet> __cdecl std::basic_filebuf<char,struct std::char_traits<char> >::seekoff(__int64,int,int)" (?seekoff@?$basic_filebuf@DU?$char_traits@D@std@@@std@@MEAA?AV?$fpos@U_Mbstatet@@@2@_JHH@Z)
+GraphCreator.obj : error LNK2001: unresolved external symbol __imp_fgetpos
+FileReader.obj : error LNK2019: unresolved external symbol __imp_fputc referenced in function "protected: virtual int __cdecl std::basic_filebuf<char,struct std::char_traits<char> >::overflow(int)" (?overflow@?$basic_filebuf@DU?$char_traits@D@std@@@std@@MEAAHH@Z)
+GraphCreator.obj : error LNK2001: unresolved external symbol __imp_fputc
+FileReader.obj : error LNK2019: unresolved external symbol __imp_fsetpos referenced in function "protected: virtual class std::fpos<struct _Mbstatet> __cdecl std::basic_filebuf<char,struct std::char_traits<char> >::seekpos(class std::fpos<struct _Mbstatet>,int)" (?seekpos@?$basic_filebuf@DU?$char_traits@D@std@@@std@@MEAA?AV?$fpos@U_Mbstatet@@@2@V32@H@Z)
+GraphCreator.obj : error LNK2001: unresolved external symbol __imp_fsetpos
+FileReader.obj : error LNK2019: unresolved external symbol __imp__fseeki64 referenced in function "protected: virtual class std::fpos<struct _Mbstatet> __cdecl std::basic_filebuf<char,struct std::char_traits<char> >::seekoff(__int64,int,int)" (?seekoff@?$basic_filebuf@DU?$char_traits@D@std@@@std@@MEAA?AV?$fpos@U_Mbstatet@@@2@_JHH@Z)
+GraphCreator.obj : error LNK2001: unresolved external symbol __imp__fseeki64
+FileReader.obj : error LNK2019: unresolved external symbol __imp_fwrite referenced in function "protected: bool __cdecl std::basic_filebuf<char,struct std::char_traits<char> >::_Endwrite(void)" (?_Endwrite@?$basic_filebuf@DU?$char_traits@D@std@@@std@@IEAA_NXZ)
+GraphCreator.obj : error LNK2001: unresolved external symbol __imp_fwrite
+FileReader.obj : error LNK2019: unresolved external symbol __imp_setvbuf referenced in function "protected: virtual class std::basic_streambuf<char,struct std::char_traits<char> > * __cdecl std::basic_filebuf<char,struct std::char_traits<char> >::setbuf(char *,__int64)" (?setbuf@?$basic_filebuf@DU?$char_traits@D@std@@@std@@MEAAPEAV?$basic_streambuf@DU?$char_traits@D@std@@@2@PEAD_J@Z)
+GraphCreator.obj : error LNK2001: unresolved external symbol __imp_setvbuf
+FileReader.obj : error LNK2019: unresolved external symbol __imp_ungetc referenced in function "protected: virtual int __cdecl std::basic_filebuf<char,struct std::char_traits<char> >::pbackfail(int)" (?pbackfail@?$basic_filebuf@DU?$char_traits@D@std@@@std@@MEAAHH@Z)
+GraphCreator.obj : error LNK2001: unresolved external symbol __imp_ungetc
+FileReader.obj : error LNK2019: unresolved external symbol __imp__lock_file referenced in function "public: virtual void __cdecl std::basic_filebuf<char,struct std::char_traits<char> >::_Lock(void)" (?_Lock@?$basic_filebuf@DU?$char_traits@D@std@@@std@@UEAAXXZ)
+GraphCreator.obj : error LNK2001: unresolved external symbol __imp__lock_file
+FileReader.obj : error LNK2019: unresolved external symbol __imp__unlock_file referenced in function "public: virtual void __cdecl std::basic_filebuf<char,struct std::char_traits<char> >::_Unlock(void)" (?_Unlock@?$basic_filebuf@DU?$char_traits@D@std@@@std@@UEAAXXZ)
+GraphCreator.obj : error LNK2001: unresolved external symbol __imp__unlock_file
+FileReader.obj : error LNK2019: unresolved external symbol __imp_memchr referenced in function "public: unsigned __int64 __cdecl std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >::find(char const *,unsigned __int64,unsigned __int64)const " (?find@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBA_KPEBD_K1@Z)
+Mixer.obj : error LNK2001: unresolved external symbol __imp_memchr
+Utilities.obj : error LNK2001: unresolved external symbol __imp_memchr
+GraphCreator.obj : error LNK2019: unresolved external symbol __imp_atof referenced in function "private: void __cdecl GraphCreator::readDurationActivity(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class Graph *,int)" (?readDurationActivity@GraphCreator@@AEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAVGraph@@H@Z)
+Utilities.obj : error LNK2019: unresolved external symbol __imp_strtol referenced in function "int __cdecl numStation(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?numStation@@YAHV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+Utilities.obj : error LNK2019: unresolved external symbol floor referenced in function "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl invHashAux(int)" (?invHashAux@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z)
+MSVCRT.lib(new_scalar.obj) : error LNK2019: unresolved external symbol _callnewh referenced in function "void * __cdecl operator new(unsigned __int64)" (??2@YAPEAX_K@Z)
+MSVCRT.lib(new_scalar.obj) : error LNK2019: unresolved external symbol malloc referenced in function "void * __cdecl operator new(unsigned __int64)" (??2@YAPEAX_K@Z)
+MSVCRT.lib(delete_scalar.obj) : error LNK2019: unresolved external symbol free referenced in function "void __cdecl operator delete(void *)" (??3@YAXPEAX@Z)
+MSVCRT.lib(utility.obj) : error LNK2019: unresolved external symbol __vcrt_initialize referenced in function __scrt_initialize_crt
+MSVCRT.lib(utility.obj) : error LNK2019: unresolved external symbol __vcrt_uninitialize referenced in function __scrt_initialize_crt
+MSVCRT.lib(utility.obj) : error LNK2019: unresolved external symbol __vcrt_uninitialize_critical referenced in function __scrt_dllmain_uninitialize_critical
+MSVCRT.lib(utility.obj) : error LNK2019: unresolved external symbol __vcrt_thread_attach referenced in function __scrt_dllmain_crt_thread_attach
+MSVCRT.lib(utility.obj) : error LNK2019: unresolved external symbol __vcrt_thread_detach referenced in function __scrt_dllmain_crt_thread_attach
+MSVCRT.lib(utility.obj) : error LNK2019: unresolved external symbol _seh_filter_dll referenced in function __scrt_dllmain_exception_filter
+MSVCRT.lib(utility.obj) : error LNK2019: unresolved external symbol _is_c_termination_complete referenced in function __scrt_dllmain_uninitialize_c
+MSVCRT.lib(utility.obj) : error LNK2019: unresolved external symbol _configure_narrow_argv referenced in function "public: static int __cdecl __scrt_narrow_argv_policy::configure_argv(void)" (?configure_argv@__scrt_narrow_argv_policy@@SAHXZ)
+MSVCRT.lib(utility.obj) : error LNK2019: unresolved external symbol _initialize_narrow_environment referenced in function __scrt_dllmain_after_initialize_c
+MSVCRT.lib(utility.obj) : error LNK2019: unresolved external symbol _initialize_onexit_table referenced in function __scrt_initialize_onexit_tables
+MSVCRT.lib(utility.obj) : error LNK2019: unresolved external symbol _register_onexit_function referenced in function _onexit
+MSVCRT.lib(utility.obj) : error LNK2019: unresolved external symbol _execute_onexit_table referenced in function __scrt_dllmain_uninitialize_c
+MSVCRT.lib(utility.obj) : error LNK2019: unresolved external symbol _crt_atexit referenced in function _onexit
+MSVCRT.lib(utility.obj) : error LNK2019: unresolved external symbol _crt_at_quick_exit referenced in function at_quick_exit
+MSVCRT.lib(utility.obj) : error LNK2019: unresolved external symbol __acrt_initialize referenced in function __scrt_initialize_crt
+MSVCRT.lib(utility.obj) : error LNK2019: unresolved external symbol __acrt_uninitialize referenced in function __scrt_uninitialize_crt
+MSVCRT.lib(utility.obj) : error LNK2019: unresolved external symbol __acrt_uninitialize_critical referenced in function __scrt_dllmain_uninitialize_critical
+MSVCRT.lib(utility.obj) : error LNK2019: unresolved external symbol __acrt_thread_attach referenced in function __scrt_dllmain_crt_thread_attach
+MSVCRT.lib(utility.obj) : error LNK2019: unresolved external symbol __acrt_thread_detach referenced in function __scrt_dllmain_crt_thread_detach
+MSVCRT.lib(utility.obj) : error LNK2019: unresolved external symbol _cexit referenced in function __scrt_dllmain_uninitialize_c
+MSVCRT.lib(utility.obj) : error LNK2001: unresolved external symbol __C_specific_handler
+MSVCRT.lib(throw_bad_alloc.obj) : error LNK2019: unresolved external symbol __std_exception_copy referenced in function "public: __cdecl std::bad_alloc::bad_alloc(class std::bad_alloc const &)" (??0bad_alloc@std@@QEAA@AEBV01@@Z)
+MSVCRT.lib(throw_bad_alloc.obj) : error LNK2019: unresolved external symbol __std_exception_destroy referenced in function "public: virtual __cdecl std::bad_alloc::~bad_alloc(void)" (??1bad_alloc@std@@UEAA@XZ)
+MSVCRT.lib(utility_desktop.obj) : error LNK2019: unresolved external symbol terminate referenced in function __scrt_unhandled_exception_filter
+C:\Users\FERNYBOY\Documents\Temporal_JP\LineBalancingBooleanMethod-master\Release\LineBalanceP.exe : fatal error LNK1120: 59 unresolved externals
